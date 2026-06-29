@@ -31,7 +31,7 @@ function openInvitation() {
     const music = document.getElementById("bgMusic");
 
     // تشغيل الموسيقى من الثانية 15
-    music.currentTime = 15;
+    music.currentTime = 16;
 
     music.play()
         .then(() => {
