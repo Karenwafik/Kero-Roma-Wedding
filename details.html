@@ -166,5 +166,16 @@
 
 <script src="details.js"></script>
 
+<script>
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
+
+    music.currentTime = 16;
+
+    music.play().catch((err) => {
+        console.log("Playback blocked:", err);
+    });
+});
+</script>
 </body>
 </html>
