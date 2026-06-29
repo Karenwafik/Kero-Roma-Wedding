@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="details.css">
 </head>
+
 <body>
 
-<audio id="bgMusic" autoplay loop hidden>
-    <source src="Music/Video Project 2.m4a" type="audio/mpeg">
+<audio id="bgMusic" loop hidden>
+    <source src="Music/Video Project 2.m4a" type="audio/mp4">
 </audio>
 
 <div class="card">
@@ -164,5 +165,17 @@
 </div>
 
 <script src="details.js"></script>
+
+<script>
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
+
+    music.currentTime = 15;
+
+    music.play().catch((err) => {
+        console.log("Playback blocked:", err);
+    });
+});
+</script>
 </body>
 </html>
